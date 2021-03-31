@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn button {
+    border-style: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: #30a7d7;
+    color: #fff;
+    font-size: 1em;
+}
+
+.pagination {
+    cursor: pointer;
+    width: 500px;
+    display: flex;
+    margin: auto;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+Link {
+    text-decoration: none; /* no underline */
+}
