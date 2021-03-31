@@ -9,7 +9,6 @@ import PageCookie from "./cookie/PageCookie";
 function App() {
     return (
         <div className="App">
-            <Navbar />
             <Switch>
                 <Route path="/" exact component={PageCookie} />
                 <Route path="/home" exact component={PokemonList} />

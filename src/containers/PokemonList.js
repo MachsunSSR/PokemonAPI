@@ -55,17 +55,13 @@ const PokemonList = (props) => {
 
     return (
         <div>
-            <div>
-                <p>Search : </p>
-                <input
-                    type="text"
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <button
-                    onClick={() => props.history.push(`/pokemon/${search}`)}
-                >
-                    Search
-                </button>
+            <div class="wrapper">
+                <div class="search-input">
+                    <input type="text" placeholder="Cari Pokemon..." />
+                    <div class="icon">
+                        <button>Search</button>
+                    </div>
+                </div>
             </div>
             {ShowData()}
             {!_.isEmpty(pokemonList.data) && (
